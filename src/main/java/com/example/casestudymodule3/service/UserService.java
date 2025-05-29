@@ -72,8 +72,7 @@ public class UserService {
     }
 
     // Đăng nhập người dùng
-    public User loginUser(String email, String password) {
-        String hashedPassword = hashPassword(password); // Mã hóa mật khẩu để kiểm tra với DB
+    public User loginUser(String email, String hashedPassword) {
         return userDAO.loginUser(email, hashedPassword); // Gọi phương thức loginUser trong UserDAO
     }
 
