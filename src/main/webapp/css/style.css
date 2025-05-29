@@ -1,0 +1,165 @@
+/* General Styling */
+body {
+    background: #ffffff; /* Nền trắng */
+    font-family: 'Roboto', sans-serif; /* Font hiện đại */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #333333;
+}
+
+/* Card Container Styling */
+.card-container {
+    background: #ffffff;
+    border: 1px solid #e0e0e0; /* Viền nhẹ */
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: 400;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #666666;
+}
+
+.form-control {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #00c853; /* Màu xanh lá khi focus */
+    outline: none;
+    box-shadow: none;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: #00c853; /* Màu xanh lá cây */
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    width: 100%;
+    color: #ffffff;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #00a843;
+}
+
+/* Google Button Styling */
+.btn-google {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    width: 100%;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn-google:hover {
+    background: #f5f5f5;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Link Styling */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1557b0;
+    text-decoration: underline;
+}
+
+/* Text Styling */
+.text-center {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.text-center a {
+    margin: 0 5px;
+}
+
+/* Divider Styling */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.divider span {
+    padding: 0 10px;
+    color: #666666;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .card-container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-control, .btn-primary, .btn-google {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
